@@ -55,7 +55,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppTheme { AplicacionDeProductos() }
+            AppTheme {
+                AplicacionDeProductos()
+            }
         }
     }
 }
@@ -281,7 +283,7 @@ fun InfoProducto(titulo: String, valor: String, ancho: androidx.compose.ui.unit.
     @Preview(showBackground = true)
     @Composable
     fun PreviewThemedContent() {
-        AppTheme() {
+        AppTheme {
             AplicacionDeProductos()
         }
     }
