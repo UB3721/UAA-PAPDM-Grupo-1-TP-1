@@ -86,6 +86,7 @@ fun FormularioDeProducto(
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.primary
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
@@ -94,6 +95,7 @@ fun FormularioDeProducto(
             label = { Text("Nombre") },
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
@@ -102,6 +104,7 @@ fun FormularioDeProducto(
             label = { Text("Descripcion") },
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
@@ -110,6 +113,7 @@ fun FormularioDeProducto(
             label = { Text("Marca") },
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
@@ -118,6 +122,7 @@ fun FormularioDeProducto(
             label = { Text("Precio") },
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
@@ -127,6 +132,7 @@ fun FormularioDeProducto(
             modifier = Modifier.fillMaxWidth(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
@@ -135,6 +141,7 @@ fun FormularioDeProducto(
             label = { Text("ImagenUrl") },
             modifier = Modifier.fillMaxWidth()
         )
+
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(
@@ -172,6 +179,7 @@ fun TarjetaDeProducto(producto: Producto, onRemove: () -> Unit) {
                 text = producto.nombre,
                 style = MaterialTheme.typography.headlineSmall
             )
+
             Spacer(modifier = Modifier.height(8.dp))
 
             BoxWithConstraints(
@@ -192,6 +200,7 @@ fun TarjetaDeProducto(producto: Producto, onRemove: () -> Unit) {
                     item { InfoProducto(titulo="Imagen", valor=producto.imagenUrl, ancho=anchoPantalla, isImage = true) }
                 }
             }
+
             Spacer(modifier = Modifier.height(16.dp))
 
             Row(
@@ -222,7 +231,9 @@ fun InfoProducto(titulo: String, valor: String, ancho: androidx.compose.ui.unit.
         Text(text = titulo,
             style = MaterialTheme.typography.titleSmall
         )
+
         Spacer(modifier = Modifier.height(16.dp))
+
         if (isImage) {
             AsyncImage(
                 model = valor,
@@ -242,6 +253,7 @@ fun InfoProducto(titulo: String, valor: String, ancho: androidx.compose.ui.unit.
                     style = MaterialTheme.typography.titleLarge
                 )
             }
+
             Spacer(modifier = Modifier.height(16.dp))
         }
     }
@@ -286,7 +298,9 @@ fun InfoProducto(titulo: String, valor: String, ancho: androidx.compose.ui.unit.
                     imagenUrl = ""
                 }
             )
+
             Spacer(modifier = Modifier.height(16.dp))
+
             ListaDeProductos(productos = productos)
         }
     }
