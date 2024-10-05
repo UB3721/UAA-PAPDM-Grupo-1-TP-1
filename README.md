@@ -1,9 +1,6 @@
-﻿Repositorio Proyecto: [https://github.com/UB3721/UAA-PAPDM-Grupo-1-TP-1 ](https://github.com/UB3721/UAA-PAPDM-Grupo-1-TP-1)Grupo 1
+﻿Repositorio Proyecto: [https://github.com/UB3721/UAA-PAPDM-Grupo-1-TP-1 ](https://github.com/UB3721/UAA-PAPDM-Grupo-1-TP-1)
 
-Integrantes:
-
-- Daniel de Jesús Franco Lezcano
-- Elías Gabriel Sanchez Ovelar
+Grupo 1
 
 **La estructura del proyecto consta de los siguientes elementos**
 
@@ -51,7 +48,9 @@ Darle click al botón Run “App” y esperar que se inicialice el emulador.
 
 Dentro del programa se encontrará el siguiente formulario vacío, rellenar con los datos deseados
 
-Datos de ejemplo ![](./imgREADME/emptyForm.png)
+Datos de ejemplo
+
+![](./imgREADME/emptyForm.png)
 
 Nombre: Nvidia GeForce RTX 4090
 
