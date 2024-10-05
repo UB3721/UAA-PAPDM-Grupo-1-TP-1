@@ -80,12 +80,14 @@ fun FormularioDeProducto(
 ) {
     Column {
         Spacer(modifier = Modifier.height(32.dp))
+
         Text(
             "Ingrese un producto",
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.primary
         )
         Spacer(modifier = Modifier.height(8.dp))
+
         TextField(
             value = nombre,
             onValueChange = onNombreChange,
@@ -93,6 +95,7 @@ fun FormularioDeProducto(
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
+
         TextField(
             value = descripcion,
             onValueChange = onDescripcionChange,
@@ -100,6 +103,7 @@ fun FormularioDeProducto(
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
+
         TextField(
             value = marca,
             onValueChange = onMarcaChange,
@@ -107,6 +111,7 @@ fun FormularioDeProducto(
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
+
         TextField(
             value = precio,
             onValueChange = onPrecioChange,
@@ -114,6 +119,7 @@ fun FormularioDeProducto(
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
+
         TextField(
             value = cantidad,
             onValueChange = onCantidadChange,
@@ -122,6 +128,7 @@ fun FormularioDeProducto(
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
         Spacer(modifier = Modifier.height(8.dp))
+
         TextField(
             value = imagenUrl,
             onValueChange = onImagenUrlChange,
@@ -129,6 +136,7 @@ fun FormularioDeProducto(
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(16.dp))
+
         Button(
             onClick = onAgregarProducto,
             modifier = Modifier.align(Alignment.End)
@@ -165,6 +173,7 @@ fun TarjetaDeProducto(producto: Producto, onRemove: () -> Unit) {
                 style = MaterialTheme.typography.headlineSmall
             )
             Spacer(modifier = Modifier.height(8.dp))
+
             BoxWithConstraints(
                 modifier = Modifier.fillMaxWidth().height(150.dp)
             ) {
@@ -184,6 +193,7 @@ fun TarjetaDeProducto(producto: Producto, onRemove: () -> Unit) {
                 }
             }
             Spacer(modifier = Modifier.height(16.dp))
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.End
